@@ -1,0 +1,22 @@
+{
+  "name": "task16",
+  "version": "1.0.0",
+  "description": "Task 16: Advanced CSS and SCSS dashboard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run css && vite --host 127.0.0.1",
+    "css": "sass --source-map scss/main.scss css/main.css",
+    "css:watch": "sass --watch scss/main.scss:css/main.css",
+    "build": "npm run css && vite build",
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "sass": "^1.108.0",
+    "vite": "^8.3.6"
+  }
+}

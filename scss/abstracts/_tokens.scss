@@ -1,0 +1,7 @@
+@use 'sass:math';
+$breakpoint: 60rem;
+$statuses: (active: (#eaf4ee, #2c7554), completed: (#edf0fb, #5868a6), paused: (#fff3df, #9c6b20));
+@function rem($pixels) { @return math.div($pixels, 16) * 1rem; }
+@mixin flex-between { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+@mixin focus-ring { outline: 3px solid var(--accent); outline-offset: 3px; }
+@mixin desktop { @media (min-width: $breakpoint) { @content; } }

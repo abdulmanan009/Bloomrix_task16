@@ -1,0 +1,34 @@
+Software Engineering / CSS
+16 - Advanced CSS and Sass/SCSS
+Description
+Study the concepts below and practice each one in a small example. Use browser DevTools, write your own examples, and explain the purpose of each concept rather than copying code.
+• CSS architecture: reusable component classes, naming conventions such as BEM, utility classes, and avoiding overly specific selectors.
+• Cascade and specificity: inheritance, source order, specificity calculation, !important pitfalls, and cascade layers (@layer).
+• Custom properties (CSS variables): design tokens for colors, spacing, typography, shadows, borders, themes, and runtime theme switching.
+• Advanced layout: CSS Grid template areas, minmax(), auto-fit/auto-fill, minmax(0, 1fr), nested grids, and responsive grid patterns.
+• Advanced Flexbox: wrapping, alignment, flexible sizing, min-width: 0, and common overflow issues.
+• Responsive design: mobile-first media queries, container queries, fluid sizing with clamp(), min(), max(), and viewport units.
+• Positioning and stacking: relative/absolute/fixed/sticky, containing blocks, stacking contexts, z-index management.
+• Advanced selectors and states: :is(), :where(), :not(), :has() where supported, pseudo-elements, focus-visible, checked, disabled, and validation states.
+• Transitions, transforms, keyframes, reduced-motion preferences, and avoiding animation that harms usability.
+• Forms and UI details: custom focus states, accessible dropdowns, tables, badges, modals, tooltips, skeletons, and empty states.
+• Sass/SCSS: variables, nesting (keep nesting shallow), partials, @use/@forward, mixins, functions, maps, loops, and compiled CSS.
+• SCSS project structure: abstracts, base, layout, components, pages; understand the difference between Sass variables and CSS custom properties.
+• Build integration: compile SCSS using a build tool such as Vite; inspect generated CSS and source maps.
+
+Instructions
+Move beyond basic styling and learn how to build maintainable, responsive interfaces similar to the admin panels used in Laravel and React applications.
+
+
+Assignment Details
+Description
+Build the following practical feature. It must be functional, responsive where relevant, readable, and tested. Reuse the previous day's project where instructed.
+• Create a dashboard UI with sidebar, top navigation, page heading, summary cards, data table, filters, status badges, and a form/modal.
+• Create a mobile-first responsive layout. Sidebar should collapse or become a mobile navigation pattern on smaller screens.
+• Use CSS Grid and Flexbox appropriately. Avoid fixed widths that cause horizontal overflow.
+• Define a small design system using CSS custom properties for colors, spacing, typography, radius, and shadows.
+• Refactor styles into SCSS partials using @use. Include at least two mixins, one function, and one map or loop where it provides real value.
+• Use BEM or another consistent component naming approach. Keep nesting shallow and avoid excessive selector specificity.
+• Add hover, focus-visible, disabled, loading, and error states. Respect prefers-reduced-motion.
+• Use clamp() for at least one fluid type/spacing rule and a container query or explain why one is not appropriate.
+• Test at phone, tablet, and desktop widths. Submit screenshots and explain the SCSS folder structure and compilation command.

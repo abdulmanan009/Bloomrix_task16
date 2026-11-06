@@ -1,0 +1,6 @@
+@use 'sass:meta';
+@layer reset, layout, components, pages;
+@layer reset { @include meta.load-css('base/base'); }
+@layer layout { @include meta.load-css('layout/shell'); }
+@layer components { @include meta.load-css('components/ui'); }
+@layer pages { @include meta.load-css('pages/dashboard'); }
